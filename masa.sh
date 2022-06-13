@@ -52,7 +52,7 @@ ExecStart=$(which geth) \
   --http --http.corsdomain "*" --http.vhosts "*" --http.addr 127.0.0.1 --http.port 8545 \
   --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,quorum,istanbul \
   --maxpeers 50 \
-  --bootnodes enode://91a3c3d5e76b0acf05d9abddee959f1bcbc7c91537d2629288a9edd7a3df90acaa46ffba0e0e5d49a20598e0960ac458d76eb8fa92a1d64938c0a3a3d60f8be4@54.158.188.182:21000
+  --bootnodes enode://136ae18de4e57e15e7dc70b03d59db11e77ae45de8ba89a243734b911b94477a3fa515d8a494c1ea79b97e134a17f04db9ff4e90e09e1c2bdba3e9aa061bf6ae@185.167.120.159:30300
 Restart=on-failure
 RestartSec=10
 LimitNOFILE=4096
