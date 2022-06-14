@@ -65,13 +65,12 @@ sudo mv $HOME/masad.service /etc/systemd/system
 
 sudo systemctl daemon-reload
 sudo systemctl enable masad
-sudo systemctl restart masad && journalctl -u masad -f -o cat
+sudo systemctl restart masad
 
 echo -e "\e[92mCTRL + C\e[0m щоб вийти"
-
-geth attach ipc:$HOME/masa-node-v1.0/data/geth.ipc
-
-> eth.syncing
-> net.peerCount
-
+echo -e "\e[92mjournalctl -u masad -f -o cat\e[0m щоб подивитись логи"
+echo -e "\e[92mgeth attach ipc:$HOME/masa-node-v1.0/data/geth.ipc\e[0m щоб зайти в меню ноди"
+echo -e "Параметри:"
+echo -e "\e[92meth.syncing\e[0m щоб подивитись статус синхронізації"
+echo -e "\e[92mnet.peerCount\e[0m щоб подивитись кількість пірів"
 echo -e "\e[92mCTRL + D\e[0m щоб вийти"
